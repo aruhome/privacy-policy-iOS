@@ -3,411 +3,147 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for AruHome iOS by Smart Remote Labs.">
   <title>Privacy Policy for AruHome (iOS)</title>
-
   <style>
-    :root {
-      color-scheme: light;
-      --bg: #f6f8fb;
-      --surface: #ffffff;
-      --text: #172033;
-      --muted: #667085;
-      --heading: #102a43;
-      --accent: #194778;
-      --border: #e4e7ec;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    :root { color-scheme: light dark; }
     body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Helvetica, Arial, sans-serif;
-      line-height: 1.7;
+      margin: 0 auto;
+      max-width: 40rem;
+      padding: 2rem 1.25rem 4rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      color: #1a1a1a;
     }
-
-    main {
-      width: min(860px, calc(100% - 32px));
-      margin: 48px auto;
-      background: var(--surface);
-      padding: 48px 56px;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      box-shadow: 0 8px 30px rgba(16, 42, 67, 0.06);
-    }
-
-    h1 {
-      margin: 0 0 8px;
-      color: var(--heading);
-      font-size: clamp(30px, 5vw, 40px);
-      line-height: 1.2;
-    }
-
-    h2 {
-      margin: 38px 0 12px;
-      color: var(--heading);
-      font-size: 23px;
-      line-height: 1.3;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 8px;
-    }
-
-    p {
-      margin: 12px 0;
-    }
-
-    .updated {
-      color: var(--muted);
-      margin-top: 0;
-      margin-bottom: 30px;
-    }
-
-    ul {
-      margin: 10px 0 16px;
-      padding-left: 26px;
-    }
-
-    li {
-      margin: 7px 0;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-
-    code {
-      background: #f1f3f5;
-      padding: 2px 5px;
-      border-radius: 4px;
-      font-size: 0.92em;
-    }
-
-    @media (max-width: 640px) {
-      main {
-        margin: 16px auto;
-        padding: 28px 22px;
-        border-radius: 12px;
-      }
-
-      h2 {
-        margin-top: 30px;
-      }
+    h1 { font-size: 1.75rem; line-height: 1.25; margin-bottom: 0.35rem; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; }
+    .updated { color: #555; margin-bottom: 1.5rem; }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
+    a { color: #0058a3; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #f2f2f2; }
+      .updated { color: #bbb; }
+      a { color: #7eb6e6; }
     }
   </style>
 </head>
-
 <body>
-  <main>
-
-    <h1>Privacy Policy for AruHome (iOS)</h1>
-
-    <p class="updated">
-      <strong>Last updated:</strong> September 30, 2026
-    </p>
-
-    <p>
-      Smart Remote Labs (“we,” “our,” or “us”) provides the AruHome iOS app
-      (the “Service”). This policy explains how AruHome handles information.
-      It applies to the <strong>App Store</strong> version of AruHome.
-    </p>
-
-    <p>
-      AruHome is built as a <strong>local-first, offline</strong> home
-      inventory app. You do not create an account with us. Your home records
-      stay on your device unless you export them yourself.
-    </p>
-
+  <h1>Privacy Policy for AruHome (iOS)</h1>
+  <p class="updated">Last updated: October 5, 2026</p>
+
+  <p>Smart Remote Labs (“we,” “our,” or “us”) provides the AruHome iOS app (the “Service”). This policy explains how AruHome handles information. It applies to the App Store version of AruHome for iPhone.</p>
+
+  <p>You do not create an account with us. We do not host your inventory on AruHome servers. Records you enter are stored on your iPhone and, if you are signed in to iCloud, may also be stored in <strong>your</strong> Apple iCloud. We cannot see, recover, or reset those records.</p>
+
+  <h2>1. Data you enter</h2>
+  <p>You may store household records such as:</p>
+  <ul>
+    <li>Property names and addresses you type in (not GPS location)</li>
+    <li>Assets, serial numbers, brands, models, rooms, purchase and warranty dates, and values</li>
+    <li>Photos, receipts, manuals, and other documents you attach</li>
+    <li>Maintenance tasks, how-to notes, expenses, and meter or odometer readings</li>
+    <li>Vendor or professional names, phone numbers, and email addresses you choose to save</li>
+  </ul>
+  <p>On the device, this is saved with Apple’s on-device storage (SwiftData and the device file system). Optional Home Screen widgets keep a small local snapshot (for example the next due task and home name) in an App Group on the same iPhone so the widget can update. That snapshot is not sent to us.</p>
+  <p>You decide what to enter. You can edit or delete records in the app.</p>
+
+  <h2>2. iCloud sync and backups</h2>
+  <p>If this iPhone is signed in to iCloud, AruHome can use <strong>your Apple ID</strong> as follows:</p>
+  <ul>
+    <li><strong>Live sync.</strong> Homes, assets, tasks, expenses, meters, and similar records may sync through Apple CloudKit in your private iCloud database. Other devices signed in with the same Apple ID may show the same data.</li>
+    <li><strong>Photos and documents.</strong> Media may be stored in your iCloud Drive container for this app, with a local copy when iCloud is unavailable.</li>
+    <li><strong>Optional zip copy.</strong> You can keep a shareable zip snapshot in iCloud Drive. That is separate from live sync and is meant as a spare copy or a file you can export.</li>
+  </ul>
+  <p>Apple provides iCloud. Apple’s privacy policy and iCloud terms apply to that storage. We do not operate AruHome cloud servers and we cannot open your CloudKit or Drive files.</p>
+  <p>The app does not offer CloudKit Sharing between different Apple IDs. Signing in to iCloud is handled by Apple, not by an AruHome account.</p>
+  <p>You can turn off the optional Drive zip in Backup &amp; iCloud. Turning off iCloud for AruHome, or signing out of iCloud, is done in iOS Settings. <strong>Uninstalling AruHome deletes data on that iPhone. It does not automatically delete your iCloud copy.</strong> To remove iCloud data, delete it from iCloud Drive / iCloud storage for AruHome, or use Apple’s iCloud settings.</p>
+  <p>Anyone who can unlock this iPhone, or who uses the same Apple ID on another device, may be able to see the synced records.</p>
+
+  <h2>3. Permissions</h2>
+  <p>AruHome asks for permissions only when you use a feature that needs them:</p>
+  <ul>
+    <li><strong>Camera</strong> — scan QR labels, appliance plates, receipts, or documents. Images are processed on the device.</li>
+    <li><strong>Photo library</strong> — attach photos you choose. We do not browse your library in the background.</li>
+    <li><strong>Notifications</strong> — optional reminders for maintenance due dates and expiring warranties.</li>
+  </ul>
+  <p>You can deny or later revoke these in iOS Settings. The rest of the app still works.</p>
+
+  <h2>4. Purchases</h2>
+  <p>The app is free to download. Optional Homeowner Toolkit access is a one-time In-App Purchase processed by Apple through StoreKit.</p>
+  <p>We do not receive or store your Apple ID, credit card number, or billing address. Apple’s privacy policy applies to payment processing. Restore Purchases re-checks Apple’s purchase record on this device. Toolkit access is a per-device StoreKit purchase; it is not stored in iCloud as a shared household license.</p>
+
+  <h2>5. What we do not collect</h2>
+  <p>The iOS app does not:</p>
+  <ul>
+    <li>Create an AruHome account or sign you in to our servers</li>
+    <li>Upload your inventory, photos, or documents to servers we operate</li>
+    <li>Use advertising SDKs, tracking pixels, or analytics SDKs</li>
+    <li>Sell or share personal information with data brokers</li>
+    <li>Track you across other companies’ apps or websites</li>
+  </ul>
+  <p>On-device text recognition uses Apple’s Vision framework and does not upload images to us.</p>
+
+  <h2>6. Links, recall searches, and exports you start</h2>
+  <p>Some actions send information to someone other than us because you started them:</p>
+  <ul>
+    <li><strong>Recall search.</strong> “Search recalls” opens a government website in Safari or your default browser. For most products that is the U.S. CPSC site, and the address can include the brand, model, and name stored on the asset. For vehicles it opens the NHTSA recalls site. Those sites (not AruHome) receive the request and any usual web logs, such as IP address. We do not receive that visit.</li>
+    <li><strong>Links you save.</strong> A task can include a URL you enter (for example a how-to page or a bill-pay site). Opening it is a normal web visit to that site.</li>
+    <li><strong>Our site.</strong> Universal links for QR labels and this privacy page may open <code>aruhome.github.io</code>. That site does not receive your inventory contents.</li>
+    <li><strong>Exports you share.</strong> A backup zip, CSV, or PDF can include photos, receipts, serial numbers, and vendor contacts. Whoever you share it with can read or import it. We do not receive the file unless you email it to us for support.</li>
+  </ul>
+
+  <h2>7. Information we may receive outside the app</h2>
+  <p>We only receive personal data if you send it to us or if a service we use logs a visit:</p>
+  <ul>
+    <li><strong>Support email.</strong> If you email <a href="mailto:aruhomeapp@gmail.com">aruhomeapp@gmail.com</a>, we receive whatever you include (name, email address, message, and any files you attach). We use that to reply and keep a record of the request. We do not add it to a marketing list.</li>
+    <li><strong>This website.</strong> Opening <a href="https://aruhome.github.io">https://aruhome.github.io</a> (privacy policy, support pages, or QR links) is hosted on GitHub Pages. GitHub may process technical data such as IP address, browser type, and time of visit as the hosting provider. That site does not receive your in-app inventory.</li>
+    <li><strong>Apple.</strong> In-app purchases, restore, iCloud storage, and optional App Store / TestFlight crash or hang reports are processed by Apple. We do not receive your payment card details. If we look at crash reports in App Store Connect, they can include device type, OS version, and a stack trace, not your inventory contents.</li>
+  </ul>
+  <p>We do not sell this information. We keep support emails only as long as needed to handle the request and any follow-up, then delete them unless we must keep them for a legal reason.</p>
+
+  <h2>8. Legal bases (EEA, UK, and similar laws)</h2>
+  <p>If you use AruHome from the European Economic Area, the United Kingdom, or another place with similar rules, we process personal data only as follows:</p>
+  <ul>
+    <li><strong>On-device inventory, photos, and documents.</strong> You decide what to store. We do not host that data. You (or the household that uses the device) control it. Our role is providing the app that stores it locally.</li>
+    <li><strong>iCloud copies.</strong> If you are signed in to iCloud, Apple stores that copy under your Apple ID. That processing is described in Apple’s privacy policy and iCloud terms. We are not the host of that copy and cannot access it.</li>
+    <li><strong>Support emails.</strong> Legitimate interests: answering your request (GDPR Art. 6(1)(f)), or contract if the message is about a purchase or the app (Art. 6(1)(b)).</li>
+    <li><strong>Website hosting logs.</strong> GitHub’s legitimate interests as hosting provider, and ours in making the policy and support pages available.</li>
+    <li><strong>Purchases and Apple diagnostics.</strong> Apple’s processing is described in Apple’s privacy policy. We rely on Apple to provide the store, payments, iCloud, and (if enabled) crash information needed to keep the app working.</li>
+  </ul>
+  <p>We do not use your data for advertising profiles or cross-app tracking.</p>
+
+  <h2>9. Your rights</h2>
+  <p>For personal data we actually hold (mainly support emails), you can ask us to:</p>
+  <ul>
+    <li>access a copy</li>
+    <li>correct inaccurate information</li>
+    <li>delete it</li>
+    <li>restrict or object to our use of it</li>
+    <li>receive a copy in a portable format where that applies</li>
+  </ul>
+  <p>Email <a href="mailto:aruhomeapp@gmail.com">aruhomeapp@gmail.com</a>. We will respond within one month.</p>
+  <p>Inventory on your device or in your iCloud: we cannot access it. You can edit or delete records in the app, export a backup, uninstall AruHome (which removes local AruHome data on that device), and delete any iCloud copy through Apple’s iCloud controls.</p>
+  <p>You may also complain to your local data protection authority (for example a supervisory authority in the EEA, or the ICO in the UK).</p>
+
+  <h2>10. Children’s privacy</h2>
+  <p>AruHome is meant for adults managing a household. It is not directed at children.</p>
+  <p>We do not knowingly collect personal information from children. In the United States we treat that as under 13 (COPPA). In the EEA/UK we do not seek to collect personal data from children under the digital-consent age that applies where you live (16 in many EEA countries, unless a Member State has set a lower age down to 13).</p>
+  <p>If you believe a child has emailed us or entered personal data in the app, contact us. We will help you delete anything we hold (such as an email). On-device and iCloud records must be deleted on the device and in iCloud.</p>
 
-    <h2>1. Local data you enter</h2>
-
-    <p>
-      You may store asset details, photos, receipts, documents, serial
-      numbers, warranties, maintenance schedules, expenses, meter readings,
-      vendor names, and similar household records.
-    </p>
-
-    <p>
-      This information is saved <strong>on your iPhone</strong> using
-      Apple’s on-device storage (SwiftData / the device file system). We do
-      not host your inventory on our servers. We cannot see, recover, or
-      reset your records.
-    </p>
-
-    <p>
-      You are responsible for backups. Use the app’s backup/export feature if
-      you want a copy off the device.
-    </p>
-
-
-    <h2>2. Permissions</h2>
-
-    <p>
-      AruHome asks for permissions only when you use a feature that needs
-      them:
-    </p>
-
-    <ul>
-      <li>
-        <strong>Camera</strong> — scan QR labels, appliance plates, receipts,
-        or documents. Images are processed on the device.
-      </li>
-      <li>
-        <strong>Photo library</strong> — attach photos you choose. We do not
-        browse your library in the background.
-      </li>
-      <li>
-        <strong>Notifications</strong> — optional reminders for maintenance
-        due dates and expiring warranties.
-      </li>
-    </ul>
-
-    <p>
-      You can deny or later revoke these in iOS Settings. The rest of the app
-      still works.
-    </p>
-
-
-    <h2>3. Purchases</h2>
-
-    <p>
-      The app is free to download. Optional
-      <strong>Homeowner Toolkit</strong> access is a one-time In-App Purchase
-      processed by <strong>Apple</strong> through StoreKit.
-    </p>
-
-    <p>
-      We do not receive or store your Apple ID, credit card number, or billing
-      address. Apple’s privacy policy applies to payment processing. Restore
-      Purchases re-checks Apple’s purchase record on this device.
-    </p>
-
-
-    <h2>4. What we do not collect</h2>
-
-    <p>The iOS app does <strong>not</strong>:</p>
-
-    <ul>
-      <li>Create an account or sign you in</li>
-      <li>Upload your inventory, photos, or documents to our servers</li>
-      <li>Use advertising SDKs, tracking pixels, or analytics SDKs</li>
-      <li>Sell or share personal information with data brokers</li>
-      <li>Track you across other companies’ apps or websites</li>
-    </ul>
-
-    <p>
-      On-device text recognition uses Apple’s Vision framework and does not
-      upload images to us.
-    </p>
-
-
-    <h2>5. Links and exports you start</h2>
-
-    <p>
-      If you open a website link (for example our support site) or share a
-      backup, CSV, or PDF, that action is started by you. We do not receive
-      the file unless you email it to us for support.
-    </p>
-
-    <p>
-      Universal links for QR labels may open
-      <code>aruhome.github.io</code>. That site does not receive your
-      inventory contents.
-    </p>
-
-
-    <h2>6. Information we may receive outside the app</h2>
-
-    <p>
-      Your inventory stays on your device. We only receive personal data if
-      you send it to us or if a service we use logs a visit:
-    </p>
-
-    <ul>
-      <li>
-        <strong>Support email.</strong> If you email
-        <a href="mailto:aruhomeapp@gmail.com">aruhomeapp@gmail.com</a>,
-        we receive whatever you include (name, email address, message, and
-        any files you attach). We use that to reply and keep a record of the
-        request. We do not add it to a marketing list.
-      </li>
-
-      <li>
-        <strong>This website.</strong> Opening
-        <a href="https://aruhome.github.io" rel="noopener noreferrer">
-          https://aruhome.github.io
-        </a>
-        (privacy policy, support pages, or QR links) is hosted on GitHub
-        Pages. GitHub may process technical data such as IP address, browser
-        type, and time of visit as the hosting provider. That site does not
-        receive your in-app inventory.
-      </li>
-
-      <li>
-        <strong>Apple.</strong> In-app purchases, restore, and optional
-        App Store / TestFlight crash or hang reports are processed by Apple.
-        We do not receive your payment card details. If we look at crash
-        reports in App Store Connect, they can include device type, OS
-        version, and a stack trace, not your inventory contents.
-      </li>
-    </ul>
-
-    <p>
-      We do not sell this information. We keep support emails only as long as
-      needed to handle the request and any follow-up, then delete them unless
-      we must keep them for a legal reason.
-    </p>
-
-
-    <h2>7. Legal bases (EEA, UK, and similar laws)</h2>
-
-    <p>
-      If you use AruHome from the European Economic Area, the United Kingdom,
-      or another place with similar rules, we process personal data only as
-      follows:
-    </p>
-
-    <ul>
-      <li>
-        <strong>On-device inventory, photos, and documents.</strong>
-        You decide what to store. We do not host that data. You (or the
-        household that uses the device) control it. Our role is providing the
-        app that stores it locally.
-      </li>
-
-      <li>
-        <strong>Support emails.</strong>
-        Legitimate interests: answering your request (GDPR Art. 6(1)(f)),
-        or contract if the message is about a purchase or the app
-        (Art. 6(1)(b)).
-      </li>
-
-      <li>
-        <strong>Website hosting logs.</strong>
-        GitHub’s legitimate interests as hosting provider, and ours in
-        making the policy and support pages available.
-      </li>
-
-      <li>
-        <strong>Purchases and Apple diagnostics.</strong>
-        Apple’s processing is described in Apple’s privacy policy. We rely on
-        Apple to provide the store, payments, and (if enabled) crash
-        information needed to keep the app working.
-      </li>
-    </ul>
-
-    <p>
-      We do not use your data for advertising profiles or cross-app tracking.
-    </p>
-
-
-    <h2>8. Your rights</h2>
-
-    <p>
-      For personal data we actually hold (mainly support emails), you can ask
-      us to:
-    </p>
-
-    <ul>
-      <li>access a copy</li>
-      <li>correct inaccurate information</li>
-      <li>delete it</li>
-      <li>restrict or object to our use of it</li>
-      <li>receive a copy in a portable format where that applies</li>
-    </ul>
-
-    <p>
-      Email
-      <a href="mailto:aruhomeapp@gmail.com">aruhomeapp@gmail.com</a>.
-      We will respond within one month.
-    </p>
-
-    <p>
-      <strong>Inventory on your device:</strong> we cannot access it. You can
-      edit or delete records in the app, export a backup, or uninstall
-      AruHome, which removes local AruHome data on that device.
-    </p>
-
-    <p>
-      You may also complain to your local data protection authority (for
-      example a supervisory authority in the EEA, or the ICO in the UK).
-    </p>
-
-
-    <h2>9. Children’s privacy</h2>
-
-    <p>
-      AruHome is meant for adults managing a household. It is not directed at
-      children.
-    </p>
-
-    <p>
-      We do not knowingly collect personal information from children. In the
-      United States we treat that as under 13 (COPPA). In the EEA/UK we do
-      not seek to collect personal data from children under the
-      digital-consent age that applies where you live (16 in many EEA
-      countries, unless a Member State has set a lower age down to 13).
-    </p>
-
-    <p>
-      If you believe a child has emailed us or entered personal data in the
-      app, contact us. We will help you delete anything we hold (such as an
-      email). On-device records must be deleted on the device.
-    </p>
-
-
-    <h2>10. Security</h2>
-
-    <p>
-      Because records stay on your device, security also depends on your
-      device passcode, Apple ID lock, and who can unlock the phone. No method
-      of storage is perfectly secure. Uninstalling the app deletes local
-      AruHome data on that device.
-    </p>
-
-
-    <h2>11. Changes</h2>
-
-    <p>
-      We may update this policy when the app or our practices change. We will
-      change the “Last updated” date at the top. For material changes we will
-      provide a notice in the app or on this page where that is practical.
-      Please read the updated policy. Using the app after a change is not
-      treated as consent for new processing that legally requires consent.
-    </p>
-
-
-    <h2>12. Contact (data controller)</h2>
-
-    <p>
-      The controller for personal data we receive (support email and, where
-      applicable, our use of Apple crash reports) is:
-    </p>
-
-    <p>
-      <strong>Smart Remote Labs</strong><br>
-    </p>
-
-    <p>
-      Email:
-      <a href="mailto:aruhomeapp@gmail.com">aruhomeapp@gmail.com</a>
-    </p>
-
-    <p>
-      Website:
-      <a href="https://aruhome.github.io" rel="noopener noreferrer">
-        https://aruhome.github.io
-      </a>
-    </p>
-
-
-
-  </main>
+  <h2>11. Security</h2>
+  <p>Security depends on your device passcode or Face ID / Touch ID, who can unlock the phone, and the security of your Apple ID and iCloud. No method of storage is perfectly secure.</p>
+  <p>Uninstalling the app deletes local AruHome data on that device. It does not by itself delete iCloud-synced records or a Drive zip.</p>
+
+  <h2>12. Changes</h2>
+  <p>We may update this policy when the app or our practices change. We will change the “Last updated” date at the top. For material changes we will provide a notice in the app or on this page where that is practical. Please read the updated policy. Using the app after a change is not treated as consent for new processing that legally requires consent.</p>
+
+  <h2>13. Contact (data controller)</h2>
+  <p>The controller for personal data we receive (support email and, where applicable, our use of Apple crash reports) is:</p>
+  <p>Smart Remote Labs<br>
+  Email: <a href="mailto:aruhomeapp@gmail.com">aruhomeapp@gmail.com</a><br>
+  Website: <a href="https://aruhome.github.io">https://aruhome.github.io</a></p>
+
 </body>
 </html>
+
+
